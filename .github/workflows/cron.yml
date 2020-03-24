@@ -1,0 +1,14 @@
+name: Cron Test
+on:
+  schedule:
+    # 日本時間の 3/24 20:00 に実行
+    - cron: '0 11 24 3 *'
+
+jobs:
+  build:
+    name: Hello World
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo "Hello World!!"
+
+
