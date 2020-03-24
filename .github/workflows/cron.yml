@@ -1,8 +1,8 @@
 name: Cron Test
 on:
   schedule:
-    # 日本時間の 3/24 20:00 に実行
-    - cron: '0 11 24 3 *'
+    # 日本時間の 3/24 20:30 に実行
+    - cron: '30 11 24 3 *'
 
 jobs:
   build:
