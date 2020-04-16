@@ -3,6 +3,8 @@ on:
   schedule:
     # 日本時間の 3/24 20:30 に実行
     - cron: '30 11 24 3 *'
+    # 1h ごとに実行
+    - cron: '0 * * * *'
 
 jobs:
   build:
